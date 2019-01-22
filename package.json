@@ -1,0 +1,16 @@
+{
+  "name": "personal-website-react",
+  "version": "1.0.0",
+  "description": "personal-website",
+  "main": "index.js",
+  "repository": "git@github.com:ThatDevOpNeal/personal-website-react.git",
+  "keywords": [
+    "react",
+    "Neal",
+    "Bharucha",
+    "Developer",
+    "Engineer"
+  ],
+  "author": "Neal Bharucha <nealbharucha@yahoo.com>",
+  "license": "MIT"
+}
