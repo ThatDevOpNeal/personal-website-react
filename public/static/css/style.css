@@ -213,6 +213,7 @@ h2 {
     width: 100%;
     background-color: #333;
     height: 5%;
+    z-index: 5;
 }
 
 .full-width-center-ul {
