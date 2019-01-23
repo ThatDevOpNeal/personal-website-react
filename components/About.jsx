@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <div className="align-center right-half-information">
+  <div className="align-center right-half-information fade">
     <h2>
           I&apos;m Neal Bharucha, an excited developer and
       {' '}

@@ -4,7 +4,7 @@ import Linkedin from './Linkedin';
 import Email from './Email';
 
 const Contact = () => (
-  <div>
+  <div className="fade">
     <link
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       rel="stylesheet"
