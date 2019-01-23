@@ -14,10 +14,10 @@ const App = () => (
   <HashRouter>
     <div className="main-container">
       <Navbar />
-      <div className="half-container">
+      <div className="half-container fade">
         <Title />
       </div>
-      <div className="half-container">
+      <div className="half-container fade">
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} exact />
