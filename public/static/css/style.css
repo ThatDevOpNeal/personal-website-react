@@ -30,6 +30,7 @@ h2 {
     position: fixed;
     top: 25%;
     left: 4%;
+    overflow-y: hidden;
 }
 
 .fade {
@@ -37,25 +38,6 @@ h2 {
     -webkit-animation: fade 2.5s;
     -moz-animation: fade 2.5s;
     -o-animation: fade 2.5s;
-}
-
-.fade-initial {
-  animation: fade-long 3s;
-  -webkit-animation: fade-long 3s;
-  -moz-animation: fade-long 3s;
-  -o-animation: fade-long 3s;
-}
-
-@keyframes fade-long {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @-webkit-keyframes fade {
