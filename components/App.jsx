@@ -1,6 +1,6 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import Title from './Title';
 import Navbar from './Navbar';
@@ -11,7 +11,7 @@ import Contact from './Contact';
 import '../public/static/css/style.css';
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <div className="main-container">
       <Navbar />
       <div className="half-container">
@@ -22,10 +22,11 @@ const App = () => (
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} exact />
           <Route path="/contact" component={Contact} exact />
+          <Route component={Home} />
         </Switch>
       </div>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default hot(module)(App);
