@@ -5,13 +5,19 @@ const Navbar = () => (
   <nav className="inline-flex flex-justify-center fixed navbar-spread navbar-fade">
     <ul className="margin-padding-zero inline-flex flex-justify-center fade">
       <li className="inline-flex">
-        <NavLink to="/" className="navlink">Home</NavLink>
+        <NavLink to="/" className="navlink">
+          <span>Home</span>
+        </NavLink>
       </li>
       <li className="inline-flex">
-        <NavLink to="/about" className="navlink">About</NavLink>
+        <NavLink to="/about" className="navlink">
+          <span>About</span>
+        </NavLink>
       </li>
       <li className="inline-flex">
-        <NavLink to="/contact" className="navlink">Contact</NavLink>
+        <NavLink to="/contact" className="navlink">
+          <span>Contact</span>
+        </NavLink>
       </li>
     </ul>
   </nav>
