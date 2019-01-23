@@ -1,33 +1,34 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const About = () => (
   <div className="align-center right-half-information fade">
     <h2>
-          I&apos;m Neal Bharucha, an excited developer and
+      I&apos;m Neal Bharucha, an excited developer and
       {' '}
       <i>near</i>
       {' '}
 avid coffee drinker.
     </h2>
     <p>
-          I&apos;ve always loved the collaboration and interaction required in order to
-          create the best
-          product. The overlap between teams, especially design and development, never fails to show
-          me that there is always room to improve. I enjoy every aspect of front-end development,
-          back-end development, and a
+      I&apos;ve always loved the collaboration and interaction required in order to create the best
+      product. The overlap between teams, especially design and development, never fails to show me
+      that there is always room to improve. I enjoy every aspect of front-end development, back-end
+      development, and a
       {' '}
       <i>
         <b>nice</b>
       </i>
       {' '}
-          pour over of course :)
+      pour over of course :)
     </p>
     <p>
-          Want to speak to me?
+      Want to speak to me?
       {' '}
-      <p>Get in touch!</p>
+      <NavLink to="/contact">
+        <p>Get in touch!</p>
+      </NavLink>
     </p>
-    <br />
     <h2>What I Do</h2>
     <h3>Front-End</h3>
     <p>Javascript, ES6, React, Next, HTML, CSS</p>
