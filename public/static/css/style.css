@@ -33,45 +33,64 @@ h2 {
 }
 
 .fade {
-    -webkit-animation: fade 5s;
-    animation: fade 3s;
-    -moz-animation: fade 5s;
-    -o-animation: fade 5s;
+    animation: fade 2.5s;
+    -webkit-animation: fade 2.5s;
+    -moz-animation: fade 2.5s;
+    -o-animation: fade 2.5s;
+}
+
+.fade-initial {
+  animation: fade-long 3s;
+  -webkit-animation: fade-long 3s;
+  -moz-animation: fade-long 3s;
+  -o-animation: fade-long 3s;
+}
+
+@keyframes fade-long {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fade {
-    0% {
-        opacity: 0
+    from {
+        opacity: 0.1;
     }
-    100% {
-        opacity: 1
+    to {
+        opacity: 1;
     }
 }
 
 @-moz-keyframes fade {
-    0% {
-        opacity: 0
+    from {
+        opacity: 0.1;
     }
-    100% {
-        opacity: 1
+    to {
+        opacity: 1;
     }
 }
 
 @keyframes fade {
-    0% {
-        opacity: 0
+    from {
+        opacity: 0.1;
     }
-    100% {
-        opacity: 1
+    to {
+        opacity: 1;
     }
 }
 
 @-o-keyframes fade {
-    0% {
-        opacity: 0
+    from {
+        opacity: 0.1;
     }
-    100% {
-        opacity: 1
+    to {
+        opacity: 1;
     }
 }
 

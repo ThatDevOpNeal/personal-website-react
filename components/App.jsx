@@ -17,7 +17,7 @@ const App = () => (
       <div className="half-container">
         <Title />
       </div>
-      <div className="half-container">
+      <div className="half-container fade-initial">
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} exact />
