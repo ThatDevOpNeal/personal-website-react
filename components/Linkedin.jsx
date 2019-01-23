@@ -1,5 +1,4 @@
 import React from 'react';
-import '../public/static/css/style.css';
 
 const Linkedin = () => (
   <a id="linkedin" href="https://www.linkedin.com/in/nealbharucha/" target="_blank" rel="noopener noreferrer">

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../public/static/css/style.css';
 
 const Name = () => (
   <div className="emphasis-container">

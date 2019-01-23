@@ -1,17 +1,17 @@
 import React from 'react';
-import '../public/static/css/style.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="inline-flex flex-justify-center fixed navbar-spread">
     <ul className="margin-padding-zero inline-flex flex-justify-center">
       <li className="inline-flex">
-        <a href="/">Home</a>
+        <NavLink to="/" className="navlink">Home</NavLink>
       </li>
       <li className="inline-flex">
-        <a href="/about">About</a>
+        <NavLink to="/about" className="navlink">About</NavLink>
       </li>
       <li className="inline-flex">
-        <a href="/contact">Contact</a>
+        <NavLink to="/contact" className="navlink">Contact</NavLink>
       </li>
     </ul>
   </nav>

@@ -59,7 +59,7 @@ h2 {
   display: inline-flex;
 }
 
-nav.inline-flex a {
+.navlink {
   display: inline-flex;
   align-items: center;
   color: white;
@@ -69,7 +69,7 @@ nav.inline-flex a {
   height: 100%;
 }
 
-.inline-flex a:hover {
+.navlink:hover {
   background-color: #111;
 }
 
