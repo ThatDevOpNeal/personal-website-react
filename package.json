@@ -7,7 +7,7 @@
     "lint": "eslint '**/*.js'",
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "deploy": "aws s3 sync dist/ s3://nealbharucha.com"
+    "deploy": "webpack --mode production && aws s3 sync dist/ s3://nealbharucha.com"
   },
   "husky": {
     "hooks": {
