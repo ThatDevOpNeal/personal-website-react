@@ -13,17 +13,6 @@ h2 {
     text-align: center;
 }
 
-.link-no-style {
-    text-decoration: none;
-    color: darkslategray;
-    transition-duration: 0.5s;
-}
-
-.link-no-style:hover {
-    color: red;
-    transition-duration: 0.5s;
-}
-
 .main-container {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
@@ -42,6 +31,15 @@ h2 {
     top: 25%;
     left: 4%;
     overflow-y: hidden;
+}
+
+.link-no-style {
+    text-decoration: none;
+    color: darkslategray;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
 }
 
 .fade {
@@ -282,6 +280,13 @@ h2 {
         right: -20px;
         transition: 0.5s;
     }
+    .link-no-style:hover {
+        color: red;
+        transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+    }
 }
 
 /* ------------------------- Mobile Phone ------------------------- */
@@ -289,5 +294,16 @@ h2 {
 @media only screen and (max-width: 767.9px) {
     .navlink:focus {
         background-color: black;
+        transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+    }
+    .link-no-style:active {
+        color: red;
+        transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
     }
 }
