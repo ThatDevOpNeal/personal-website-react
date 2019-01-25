@@ -5,10 +5,6 @@ import Email from './Email';
 
 const Contact = () => (
   <div className="fade">
-    <link
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
     <h1 className="right-side-title">Contact Information</h1>
     <ul className="full-width-center-ul margin-padding-zero">
       <li>
@@ -22,3 +18,10 @@ const Contact = () => (
 );
 
 export default Contact;
+
+// <link
+//   rel="stylesheet"
+//   href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+//   integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+//   crossOrigin="anonymous"
+// />;

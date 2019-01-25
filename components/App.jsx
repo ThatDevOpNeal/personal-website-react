@@ -9,10 +9,15 @@ import About from './About';
 import Contact from './Contact';
 
 import '../public/static/css/style.css';
+import '../public/static/css/font-awesome-animation.css';
 
 const App = () => (
   <HashRouter>
     <div className="main-container">
+      <link
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+        rel="stylesheet"
+      />
       <Navbar />
       <div className="half-container">
         <Title />
