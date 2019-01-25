@@ -33,7 +33,7 @@ avid coffee drinker.
     <h3>Front-End</h3>
     <p>Javascript, ES6, React, Next, HTML, CSS</p>
     <h3>Back-End</h3>
-    <p>NodeJS, ExpressJs, Python, APIs, SQL, NoSQL</p>
+    <p>NodeJS, ExpressJs, Python, APIs, SQL, Postgres</p>
     <h3>Apps</h3>
     <p>Swift, React-Native</p>
     <h3>Cloud</h3>
