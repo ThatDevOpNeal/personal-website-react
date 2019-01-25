@@ -294,7 +294,7 @@ h2 {
 @media only screen and (max-width: 767.9px) {
     .navlink:hover, .navlink:active {
         background-color: black;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         -webkit-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
@@ -302,8 +302,8 @@ h2 {
     .link-no-style:hover, .link-no-style:active {
         color: red;
         transition-duration: 1s;
-        -webkit-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
+        -webkit-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        -moz-transition-duration: 1s;
     }
 }
