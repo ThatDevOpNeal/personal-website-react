@@ -9,7 +9,7 @@ import About from './About';
 import Contact from './Contact';
 
 import '../public/static/css/style.css';
-import '../public/static/css/font-awesome-animation.css';
+import '../public/static/css/animations.css';
 
 const App = () => (
   <HashRouter>

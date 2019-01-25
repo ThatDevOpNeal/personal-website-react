@@ -2,16 +2,20 @@ import React from 'react';
 
 import Linkedin from './Linkedin';
 import Email from './Email';
+import Codewars from './Codewars';
 
 const Contact = () => (
   <div className="fade">
-    <h1 className="right-side-title">Contact Information</h1>
+    <h1 className="right-side-title faa-tada animated-hover">Contact Information</h1>
     <ul className="full-width-center-ul margin-padding-zero">
       <li>
         <Linkedin />
       </li>
       <li>
         <Email />
+      </li>
+      <li>
+        <Codewars />
       </li>
     </ul>
   </div>

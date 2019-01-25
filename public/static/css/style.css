@@ -13,6 +13,17 @@ h2 {
     text-align: center;
 }
 
+.link-no-style {
+    text-decoration: none;
+    color: darkslategray;
+    transition-duration: 0.5s;
+}
+
+.link-no-style:hover {
+    color: red;
+    transition-duration: 0.5s;
+}
+
 .main-container {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
