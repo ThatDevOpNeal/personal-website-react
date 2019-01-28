@@ -1,11 +1,11 @@
+body {
+    font-size: 100%;
+}
+
 ul {
     list-style-type: none;
     height: 100%;
     width: 75%;
-}
-
-li {
-    font-size: 36px;
 }
 
 h1,
@@ -139,15 +139,11 @@ h2 {
 }
 
 .right-half-information {
-    font-size: 1.25vw;
+    font-size: 1.5em;
 }
 
 .right-half-information p {
-    font-size: 1vw;
-}
-
-.right-side-title {
-    font-size: 2.5vw;
+    font-size: 0.9em;
 }
 
 .inline-flex {
@@ -252,6 +248,10 @@ h2 {
 /* ------------------------- Laptop / Tablet ------------------------- */
 
 @media only screen and (min-width: 768px) {
+    li {
+        font-size: 250%;
+    }
+
     .navlink:hover {
         -webkit-transform: scale(1.2);
         -o-transform: scale(1.2);
@@ -287,11 +287,22 @@ h2 {
         -o-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
     }
+    .right-side-title {
+        font-size: 3em;
+    }
 }
 
 /* ------------------------- Mobile Phone ------------------------- */
 
 @media only screen and (max-width: 767.9px) {
+    li {
+        font-size: 175%;
+    }
+
+    h2 {
+        font-size: 115%;
+    }
+
     .navlink:hover, .navlink:active {
         background-color: black;
         transition-duration: 0.5s;
@@ -305,5 +316,12 @@ h2 {
         -webkit-transition-duration: 1s;
         -o-transition-duration: 1s;
         -moz-transition-duration: 1s;
+    }
+    .right-half-information {
+        font-size: 1em;
+    }
+
+    .right-half-information p {
+        font-size: 0.9em;
     }
 }
