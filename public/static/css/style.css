@@ -324,4 +324,14 @@ h2 {
     .right-half-information p {
         font-size: 0.9em;
     }
+
+    .mobile-container {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .mobile-title {
+        visibility: hidden;
+        width: 0%;
+    }
 }

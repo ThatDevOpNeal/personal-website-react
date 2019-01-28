@@ -19,10 +19,10 @@ const App = () => (
         rel="stylesheet"
       />
       <Navbar />
-      <div className="half-container">
+      <div className="half-container mobile-title">
         <Title />
       </div>
-      <div className="half-container">
+      <div className="half-container mobile-container">
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} exact />
