@@ -22,13 +22,11 @@ avid coffee drinker.
       {' '}
       pour over of course :)
     </p>
-    <p>
-      Want to speak to me?
-      {' '}
-      <NavLink to="/contact">
-        <p>Get in touch!</p>
-      </NavLink>
-    </p>
+    <p> Want to speak to me? </p>
+    <NavLink to="/contact">
+      <p>Get in touch!</p>
+    </NavLink>
+
     <h2>What I Do</h2>
     <h3>Front-End</h3>
     <p>Javascript, ES6, React, Next, HTML, CSS</p>
