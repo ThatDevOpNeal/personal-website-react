@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { hot } from 'react-hot-loader';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ const particlesParams = {
 
 const App = () => (
   <HashRouter>
-    <React.Fragment>
+    <Fragment>
       <Particles
         params={particlesParams}
         className="particle-container"
@@ -49,7 +49,7 @@ const App = () => (
           </Switch>
         </div>
       </div>
-    </React.Fragment>
+    </Fragment>
   </HashRouter>
 );
 
