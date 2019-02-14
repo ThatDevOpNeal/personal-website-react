@@ -70,11 +70,11 @@
 
 @media only screen and (min-width: 768px) {
     .faa-tada.animated-hover:hover {
-        -webkit-animation: tada 1.8s linear 1;
-        animation: tada 1.8s linear 1;
+        -webkit-animation: tada 1.5s linear 1;
+        animation: tada 1.5s linear 1;
     }
     .faa-bounce.animated-hover:hover {
-        -webkit-animation: bounce 1.5s ease infinite;
-        animation: bounce 1.5s ease infinite
+        -webkit-animation: bounce 1.2s ease infinite;
+        animation: bounce 1.2s ease infinite
     }
 }
