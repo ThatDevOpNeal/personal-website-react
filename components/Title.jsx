@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Name = () => (
-  <div className="emphasis-container fade">
-    <h1>Neal</h1>
-    <h1>Bharucha</h1>
+  <div className="emphasis-container">
+    <h1 className="move-in-left">Neal</h1>
+    <h1 className="move-in-right">Bharucha</h1>
   </div>
 );
 

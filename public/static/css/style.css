@@ -41,102 +41,13 @@ h2 {
     position: fixed;
     top: 25%;
     left: 4%;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .link-no-style {
     text-decoration: none;
     color: darkslategray;
     transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-}
-
-.fade {
-    animation: fade 2.2s;
-    -webkit-animation: fade 2.2s;
-    -moz-animation: fade 2.2s;
-    -o-animation: fade 2.2s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fade {
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fade {
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.navbar-fade {
-    animation: fade-navbar 1s;
-    -webkit-animation: fade-navbar 1s;
-    -moz-animation: fade-navbar 1s;
-    -o-animation: fade-navbar 1s;
-}
-
-@-webkit-keyframes fade-navbar {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fade-navbar {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-navbar {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fade-navbar {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .align-center {
@@ -170,10 +81,6 @@ h2 {
     text-decoration: none;
     height: 100%;
     cursor: pointer;
-    -webkit-transition-duration: 0.2s;
-    /* Safari */
-    -o-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
 
@@ -218,9 +125,6 @@ h2 {
     display: inline-block;
     color: #000 !important;
     background: #fdfdfd;
-    background: -webkit-linear-gradient(#fdfdfd, #eee);
-    background: -moz-linear-gradient(#fdfdfd, #eee);
-    background: -o-linear-gradient(#fdfdfd, #eee);
     background: linear-gradient(#fdfdfd, #eee);
     text-decoration: none;
     font-size: 20px !important;
@@ -239,9 +143,6 @@ h2 {
 #icon-bg {
     display: inline-block;
     background: #007bb6;
-    background: -webkit-linear-gradient(#81bedb, #007bb6);
-    background: -moz-linear-gradient(#81bedb, #007bb6);
-    background: -o-linear-gradient(#81bedb, #007bb6);
     background: linear-gradient(#81bedb, #007bb6);
     color: #fff;
     padding: 0px 5px 3px;
@@ -262,20 +163,12 @@ h2 {
     li {
         font-size: 250%;
     }
-
     .navlink:hover {
-        -webkit-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
     .link-no-style:hover {
         color: #8c14fc;
         transition-duration: 0.3s;
-        -webkit-transition-duration: 0.3s;
-        -o-transition-duration: 0.3s;
-        -moz-transition-duration: 0.3s;
     }
     .right-side-title {
         font-size: 3em;
@@ -288,38 +181,29 @@ h2 {
     li {
         font-size: 175%;
     }
-
     h2 {
         font-size: 115%;
     }
-
-    .navlink:hover, .navlink:active {
+    .navlink:hover,
+    .navlink:active {
         background-color: black;
         transition-duration: 0.5s;
-        -webkit-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
     }
-    .link-no-style:hover, .link-no-style:active {
+    .link-no-style:hover,
+    .link-no-style:active {
         color: red;
         transition-duration: 1s;
-        -webkit-transition-duration: 1s;
-        -o-transition-duration: 1s;
-        -moz-transition-duration: 1s;
     }
     .right-half-information {
         font-size: 1em;
     }
-
     .right-half-information p {
         font-size: 0.9em;
     }
-
     .mobile-container {
         width: 100%;
         z-index: 1;
     }
-
     .mobile-title {
         visibility: hidden;
         width: 0%;
