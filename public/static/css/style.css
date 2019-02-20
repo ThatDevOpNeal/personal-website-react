@@ -132,13 +132,13 @@ body {
     color: red;
     transition-duration: 1s; }
   .half-container__about {
-    text-align: center;
     font-size: 1.5rem; }
     .half-container__about p {
       font-size: 1rem; }
   .main-container--mobile-container {
-    width: 100%;
-    z-index: 1; }
+    width: 100vw;
+    z-index: 1;
+    text-align: center; }
   .main-container__half-container--mobile-title {
     visibility: hidden;
     width: 0%; } }
