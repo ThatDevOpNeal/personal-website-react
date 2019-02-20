@@ -9,7 +9,7 @@
     "compile:sass": "node-sass sass/main.scss public/static/css/style.css",
     "watch:sass": "node-sass sass/main.scss public/static/css/style.css -w",
     "build": "webpack --mode production",
-    "deploy": "webpack --mode production && aws s3 sync dist/ s3://nealbharucha.com"
+    "deploy": "webpack --mode production && node-sass sass/main.scss public/static/css/style.css && aws s3 sync dist/ s3://nealbharucha.com"
   },
   "husky": {
     "hooks": {
