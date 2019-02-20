@@ -26,9 +26,19 @@ body {
   width: 100vw;
   height: 100vh; }
   .main-container__half-container {
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: 100vh;
     flex-wrap: wrap; }
+
+.half-container__contact-ul {
+  text-align: center;
+  list-style: none;
+  font-size: 1.25rem; }
+
+.half-container--no-style {
+  text-decoration: none;
+  color: darkslategray;
+  transition-duration: 0.3s; }
 
 .particle-container {
   background: lightcoral;
@@ -59,20 +69,6 @@ body {
     /* Animation */
     animation: moveInRight 1s ease-out; }
 
-.link-no-style {
-  text-decoration: none;
-  color: darkslategray;
-  transition-duration: 0.4s; }
-
-.align-center {
-  text-align: center; }
-
-.right-half-information {
-  font-size: 1.5em; }
-
-.right-half-information p {
-  font-size: 0.9em; }
-
 .navbar {
   position: fixed;
   overflow: hidden;
@@ -99,48 +95,6 @@ body {
     cursor: pointer;
     transition-duration: 0.1s; }
 
-.full-width-center-ul {
-  width: 100%;
-  text-align: center; }
-
-.full-width-center-ul li {
-  padding: 0.5vw; }
-
-.align-start {
-  text-align: start !important; }
-
-#linkedin {
-  display: inline-block;
-  color: #000 !important;
-  background: #fdfdfd;
-  background: linear-gradient(#fdfdfd, #eee);
-  text-decoration: none;
-  font-size: 20px !important;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  line-height: inherit;
-  font-weight: bold;
-  border: 1px solid #bbb;
-  border-radius: 3px;
-  width: 105px; }
-
-#linkedin:hover {
-  opacity: 0.8; }
-
-#icon-bg {
-  display: inline-block;
-  background: #007bb6;
-  background: linear-gradient(#81bedb, #007bb6);
-  color: #fff;
-  padding: 0px 5px 3px;
-  border-radius: 3px;
-  border: 1px solid #3f7eb7;
-  font-size: 24px;
-  margin: -1px; }
-
-#icon-label-bg {
-  display: inline-block;
-  padding: 3px 5px 3px 5px; }
-
 /* ------------------------- Laptop / Tablet ------------------------- */
 @media only screen and (min-width: 768px) {
   li {
@@ -148,11 +102,20 @@ body {
   .navbar__navlink:hover {
     transform: scale(1.2);
     transition-duration: 0.2s; }
-  .link-no-style:hover {
+  .half-container--right-side-title {
+    font-size: 3rem;
+    text-align: center; }
+  .half-container__about {
+    padding-right: 2vw;
+    text-align: center;
+    font-size: 1.8rem; }
+    .half-container__about h3 {
+      font-size: 1.5rem; }
+    .half-container__about p {
+      font-size: 1.25rem; }
+  .half-container--no-style:hover {
     color: #8c14fc;
-    transition-duration: 0.3s; }
-  .right-side-title {
-    font-size: 3em; } }
+    transition-duration: 0.3s; } }
 
 /* ------------------------- Mobile Phone ------------------------- */
 @media only screen and (max-width: 767.9px) {
@@ -164,14 +127,15 @@ body {
   .navbar__navlink:active {
     background-color: black;
     transition-duration: 0.5s; }
-  .link-no-style:hover,
-  .link-no-style:active {
+  .half-container--no-style:hover,
+  .half-container--no-style:active {
     color: red;
     transition-duration: 1s; }
-  .right-half-information {
-    font-size: 1em; }
-  .right-half-information p {
-    font-size: 0.9em; }
+  .half-container__about {
+    text-align: center;
+    font-size: 1.5rem; }
+    .half-container__about p {
+      font-size: 1rem; }
   .main-container--mobile-container {
     width: 100%;
     z-index: 1; }

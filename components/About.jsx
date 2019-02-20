@@ -2,13 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const About = () => (
-  <div className="align-center right-half-information fade">
+  <div className="half-container__about fade">
     <h2>
       I&apos;m Neal Bharucha, an excited developer and
       {' '}
       <i>near</i>
       {' '}
-avid coffee drinker.
+      avid coffee drinker.
     </h2>
     <p>
       I&apos;ve always loved the collaboration and interaction required in order to create the best
@@ -24,6 +24,7 @@ avid coffee drinker.
     </p>
     <p> Want to speak to me? </p>
     <NavLink to="/contact">
+      {/* style the NavLink above to get rid of link features if wanted */}
       <p>Get in touch!</p>
     </NavLink>
 
@@ -41,12 +42,12 @@ avid coffee drinker.
     <p>
       <i>&quot;Be the change that you wish to see in the world.&quot;</i>
       {' '}
-- Mahatma Gandhi
+      - Mahatma Gandhi
     </p>
     <p>
       <i>&quot;Every champion was once a contender who refused to give up.&quot;</i>
       {' '}
-- Rocky Balboa
+      - Rocky Balboa
     </p>
     <br />
   </div>
