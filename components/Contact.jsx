@@ -7,7 +7,7 @@ import Codewars from './Codewars';
 const Contact = () => (
   <div className="fade">
     <h1 className="half-container--right-side-title faa-tada animated-hover">Contact Information</h1>
-    <ul className="half-container__contact-ul ">
+    <ul className="half-container__contact-ul">
       <li>
         <Linkedin />
       </li>

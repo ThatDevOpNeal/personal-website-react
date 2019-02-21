@@ -27,7 +27,7 @@ body {
     display: flex;
     margin-top: 5vh;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     &__half-container {
         width: 50vw;
         height: 100vh;
@@ -39,7 +39,7 @@ body {
     &__contact-ul {
         text-align: center;
         list-style: none;
-        font-size: 1.25rem;
+        font-size: 300%;
     }
     &--no-style {
         text-decoration: none;
@@ -67,14 +67,15 @@ body {
     text-align: center;
     &--main {
         display: block;
-        font-size: 7rem;
+        font-size: 700%;
         letter-spacing: 1.75rem;
         /* Animation */
         animation: moveInLeft 1s ease-out;
+        max-width: inherit;
     }
     &--sub {
         display: block;
-        font-size: 7rem;
+        font-size: 700%;
         letter-spacing: 1.75rem;
         /* Animation */
         animation: moveInRight 1s ease-out;
@@ -94,6 +95,7 @@ body {
     z-index: 50;
     text-align: center;
     align-items: center;
+    font-size: 250%;
     ul {
         display: inline-flex;
         justify-content: center;
@@ -112,10 +114,7 @@ body {
 
 /* ------------------------- Laptop / Tablet ------------------------- */
 
-@media only screen and (min-width: 768px) {
-    li {
-        font-size: 250%;
-    }
+@media only screen and (min-width: 1024px) {
     .navbar__navlink:hover {
         transform: scale(1.2);
         transition-duration: 0.2s;
@@ -143,19 +142,62 @@ body {
     }
 }
 
+/* ------------------------- Browser Half-Screen ------------------------- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar__navlink:hover {
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+    }
+    .title-container {
+        &--main {
+            font-size: 400%;
+        }
+        &--sub {
+            font-size: 400%;
+        }
+    }
+    .half-container {
+        &--right-side-title {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        &__about {
+            padding-right: 2vw;
+            text-align: center;
+            font-size: 1.3rem;
+            h3 {
+                font-size: 1.2srem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        &--no-style:hover {
+            color: #8c14fc;
+            transition-duration: 0.3s;
+        }
+    }
+}
+
 /* ------------------------- Mobile Phone ------------------------- */
 
 @media only screen and (max-width: 767.9px) {
-    li {
-        font-size: 175%;
-    }
     h2 {
         font-size: 115%;
     }
-    .navbar__navlink:hover,
-    .navbar__navlink:active {
-        background-color: black;
-        transition-duration: 0.5s;
+    .half-container__contact-ul {
+        li {
+            font-size: 175%;
+        }
+    }
+    .navbar {
+        font-size: 175%;
+        &__navlink:hover,
+        &__navlink:active {
+            background-color: black;
+            transition-duration: 0.5s;
+        }
     }
     .half-container--no-style:hover,
     .half-container--no-style:active {
@@ -163,6 +205,8 @@ body {
         transition-duration: 1s;
     }
     .half-container__about {
+        padding-left: 1vw;
+        padding-right: 1vw;
         font-size: 1.5rem;
         p {
             font-size: 1rem;
