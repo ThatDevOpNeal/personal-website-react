@@ -118,7 +118,7 @@ body {
     .half-container__about p {
       font-size: 1.25rem; }
   .half-container--no-style:hover {
-    color: #8c14fc;
+    color: #982dfc;
     transition-duration: 0.3s; } }
 
 /* ------------------------- Browser Half-Screen ------------------------- */
@@ -142,7 +142,7 @@ body {
     .half-container__about p {
       font-size: 1.1rem; }
   .half-container--no-style:hover {
-    color: #8c14fc;
+    color: #982dfc;
     transition-duration: 0.3s; } }
 
 /* ------------------------- Mobile Phone ------------------------- */

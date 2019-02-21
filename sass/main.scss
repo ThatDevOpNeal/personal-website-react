@@ -1,3 +1,6 @@
+$color-purple:#8c14fc;
+$color-navbar: #333;
+
 *,
 *::after,
 *::before {
@@ -96,7 +99,7 @@ body {
     display: inline-flex;
     justify-content: center;
     width: 100vw;
-    background-color: #333;
+    background-color: $color-navbar;
     z-index: 50;
     text-align: center;
     align-items: center;
@@ -141,7 +144,7 @@ body {
             }
         }
         &--no-style:hover {
-            color: #8c14fc;
+            color: lighten($color: $color-purple, $amount: 5);
             transition-duration: 0.3s;
         }
     }
@@ -179,7 +182,7 @@ body {
             }
         }
         &--no-style:hover {
-            color: #8c14fc;
+            color: lighten($color: $color-purple, $amount: 5);
             transition-duration: 0.3s;
         }
     }
