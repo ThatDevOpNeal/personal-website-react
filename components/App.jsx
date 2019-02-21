@@ -36,7 +36,7 @@ const App = () => (
         <div className="main-container__half-container main-container__half-container--mobile-title">
           <Title />
         </div>
-        <div className="main-container__half-container main-container--mobile-container">
+        <div className="main-container__half-container main-container__half-container--right-animation main-container--mobile-container">
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} exact />

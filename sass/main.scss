@@ -32,6 +32,11 @@ body {
         width: 50vw;
         height: 100vh;
         flex-wrap: wrap;
+        &--right-animation {
+            animation: moveInBottom .75s ease-out .75s;
+            /* This will make the 0% animation apply right when it starts. */
+            animation-fill-mode: backwards;
+        }
     }
 }
 
