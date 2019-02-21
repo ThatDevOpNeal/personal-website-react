@@ -2,20 +2,20 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
-  <nav className="inline-flex flex-justify-center fixed navbar-spread navbar-fade">
-    <ul className="margin-padding-zero inline-flex flex-justify-center fade">
-      <li className="inline-flex">
-        <NavLink to="/" className="navlink">
+  <nav className="navbar navbar--navbar-fade">
+    <ul className="fade">
+      <li>
+        <NavLink to="/" className="navbar__navlink">
           <span>Home</span>
         </NavLink>
       </li>
-      <li className="inline-flex">
-        <NavLink to="/about" className="navlink">
+      <li>
+        <NavLink to="/about" className="navbar__navlink">
           <span>About</span>
         </NavLink>
       </li>
-      <li className="inline-flex">
-        <NavLink to="/contact" className="navlink">
+      <li>
+        <NavLink to="/contact" className="navbar__navlink">
           <span>Contact</span>
         </NavLink>
       </li>

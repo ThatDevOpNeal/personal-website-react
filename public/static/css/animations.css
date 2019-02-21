@@ -11,7 +11,7 @@
     }
 }
 
-.navbar-fade {
+.navbar--navbar-fade {
     animation: fade-navbar 1s;
 }
 

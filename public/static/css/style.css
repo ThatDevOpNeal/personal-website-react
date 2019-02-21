@@ -1,211 +1,144 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*
+        Doing this, main font-size, in PX is bad practice.
+        This will end up over-writing it for people who manually change it (disabled people).
+        Use percentage, we want 10px. natural is 16px. so font-size would be 62.5% (10/16 * 100)
+    */
+  font-size: 75%; }
+
 body {
-    font-size: 100%;
-}
-
-ul {
-    list-style-type: none;
-    height: 100%;
-    width: 75%;
-}
-
-h1,
-h2 {
-    text-align: center;
-}
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box; }
 
 .main-container {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: absolute;
-    display: flex;
-    margin-top: 5%;
-    width: 100%;
-    height: 100%;
-}
+  position: absolute;
+  display: flex;
+  margin-top: 5vh;
+  width: 100vw;
+  height: 100vh; }
+  .main-container__half-container {
+    width: 50vw;
+    height: 100vh;
+    flex-wrap: wrap; }
+
+.half-container__contact-ul {
+  text-align: center;
+  list-style: none;
+  font-size: 1.25rem; }
+
+.half-container--no-style {
+  text-decoration: none;
+  color: darkslategray;
+  transition-duration: 0.3s; }
 
 .particle-container {
-    background: lightcoral;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -10;
-    opacity: 0.9;
-}
+  background: lightcoral;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  opacity: 0.85; }
 
-.emphasis-container {
-    font-size: 5vw;
-    font-size-adjust: initial;
-    letter-spacing: -2px;
-    line-height: 110%;
-    position: fixed;
-    top: 25%;
-    left: 4%;
-    overflow: hidden;
-}
+.title-container {
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  position: fixed;
+  top: 30%;
+  width: inherit;
+  overflow: hidden;
+  text-align: center; }
+  .title-container--main {
+    display: block;
+    font-size: 7rem;
+    letter-spacing: 1.75rem;
+    /* Animation */
+    animation: moveInLeft 1s ease-out; }
+  .title-container--sub {
+    display: block;
+    font-size: 7rem;
+    letter-spacing: 1.75rem;
+    /* Animation */
+    animation: moveInRight 1s ease-out; }
 
-.link-no-style {
-    text-decoration: none;
-    color: darkslategray;
-    transition-duration: 0.4s;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.half-container {
-    width: 50%;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
-.right-half-information {
-    font-size: 1.5em;
-}
-
-.right-half-information p {
-    font-size: 0.9em;
-}
-
-.inline-flex {
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 5vh;
+  display: inline-flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #333;
+  z-index: 50;
+  text-align: center;
+  align-items: center; }
+  .navbar ul {
     display: inline-flex;
-}
-
-.navlink {
-    display: inline-flex;
-    align-items: center;
+    justify-content: center;
+    list-style-type: none; }
+  .navbar__navlink {
+    display: inherit;
     color: white;
-    text-align: center;
-    padding: 0 16px;
+    padding: 0 1.2rem;
     text-decoration: none;
     height: 100%;
     cursor: pointer;
-    transition-duration: 0.2s;
-}
-
-.flex-justify-center {
-    justify-content: center;
-}
-
-.margin-padding-zero {
-    margin: 0;
-    padding: 0;
-}
-
-.fixed {
-    top: 0;
-    bottom: inherit;
-    left: 0;
-    position: fixed;
-    overflow: hidden;
-}
-
-.navbar-spread {
-    width: 100%;
-    background-color: #333;
-    height: 5%;
-    z-index: 5;
-}
-
-.full-width-center-ul {
-    width: 100%;
-    text-align: center;
-}
-
-.full-width-center-ul li {
-    padding: 0.5vw;
-}
-
-.align-start {
-    text-align: start !important;
-}
-
-#linkedin {
-    display: inline-block;
-    color: #000 !important;
-    background: #fdfdfd;
-    background: linear-gradient(#fdfdfd, #eee);
-    text-decoration: none;
-    font-size: 20px !important;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    line-height: inherit;
-    font-weight: bold;
-    border: 1px solid #bbb;
-    border-radius: 3px;
-    width: 105px;
-}
-
-#linkedin:hover {
-    opacity: 0.8;
-}
-
-#icon-bg {
-    display: inline-block;
-    background: #007bb6;
-    background: linear-gradient(#81bedb, #007bb6);
-    color: #fff;
-    padding: 0px 5px 3px;
-    border-radius: 3px;
-    border: 1px solid #3f7eb7;
-    font-size: 24px;
-    margin: -1px;
-}
-
-#icon-label-bg {
-    display: inline-block;
-    padding: 3px 5px 3px 5px;
-}
+    transition-duration: 0.1s; }
 
 /* ------------------------- Laptop / Tablet ------------------------- */
-
 @media only screen and (min-width: 768px) {
-    li {
-        font-size: 250%;
-    }
-    .navlink:hover {
-        transform: scale(1.2);
-    }
-    .link-no-style:hover {
-        color: #8c14fc;
-        transition-duration: 0.3s;
-    }
-    .right-side-title {
-        font-size: 3em;
-    }
-}
+  li {
+    font-size: 250%; }
+  .navbar__navlink:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s; }
+  .half-container--right-side-title {
+    font-size: 3rem;
+    text-align: center; }
+  .half-container__about {
+    padding-right: 2vw;
+    text-align: center;
+    font-size: 1.8rem; }
+    .half-container__about h3 {
+      font-size: 1.5rem; }
+    .half-container__about p {
+      font-size: 1.25rem; }
+  .half-container--no-style:hover {
+    color: #8c14fc;
+    transition-duration: 0.3s; } }
 
 /* ------------------------- Mobile Phone ------------------------- */
-
 @media only screen and (max-width: 767.9px) {
-    li {
-        font-size: 175%;
-    }
-    h2 {
-        font-size: 115%;
-    }
-    .navlink:hover,
-    .navlink:active {
-        background-color: black;
-        transition-duration: 0.5s;
-    }
-    .link-no-style:hover,
-    .link-no-style:active {
-        color: red;
-        transition-duration: 1s;
-    }
-    .right-half-information {
-        font-size: 1em;
-    }
-    .right-half-information p {
-        font-size: 0.9em;
-    }
-    .mobile-container {
-        width: 100%;
-        z-index: 1;
-    }
-    .mobile-title {
-        visibility: hidden;
-        width: 0%;
-    }
-}
+  li {
+    font-size: 175%; }
+  h2 {
+    font-size: 115%; }
+  .navbar__navlink:hover,
+  .navbar__navlink:active {
+    background-color: black;
+    transition-duration: 0.5s; }
+  .half-container--no-style:hover,
+  .half-container--no-style:active {
+    color: red;
+    transition-duration: 1s; }
+  .half-container__about {
+    font-size: 1.5rem; }
+    .half-container__about p {
+      font-size: 1rem; }
+  .main-container--mobile-container {
+    width: 100vw;
+    z-index: 1;
+    text-align: center; }
+  .main-container__half-container--mobile-title {
+    visibility: hidden;
+    width: 0%; } }

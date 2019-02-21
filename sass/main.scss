@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /*
+        Doing this, main font-size, in PX is bad practice.
+        This will end up over-writing it for people who manually change it (disabled people).
+        Use percentage, we want 10px. natural is 16px. so font-size would be 62.5% (10/16 * 100)
+    */
+    font-size: 75%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7; // 1.7 times the pre-defined line height.
+    box-sizing: border-box; // include everything within the true height and width.
+}
+
+.main-container {
+    position: absolute;
+    display: flex;
+    margin-top: 5vh;
+    width: 100vw;
+    height: 100vh;
+    &__half-container {
+        width: 50vw;
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+}
+
+.half-container {
+    &__contact-ul {
+        text-align: center;
+        list-style: none;
+        font-size: 1.25rem;
+    }
+    &--no-style {
+        text-decoration: none;
+        color: darkslategray;
+        transition-duration: 0.3s;
+    }
+}
+
+.particle-container {
+    background: lightcoral;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    opacity: 0.85;
+}
+
+.title-container {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    position: fixed;
+    top: 30%;
+    width: inherit;
+    overflow: hidden;
+    text-align: center;
+    &--main {
+        display: block;
+        font-size: 7rem;
+        letter-spacing: 1.75rem;
+        /* Animation */
+        animation: moveInLeft 1s ease-out;
+    }
+    &--sub {
+        display: block;
+        font-size: 7rem;
+        letter-spacing: 1.75rem;
+        /* Animation */
+        animation: moveInRight 1s ease-out;
+    }
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    display: inline-flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #333;
+    z-index: 50;
+    text-align: center;
+    align-items: center;
+    ul {
+        display: inline-flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+    &__navlink {
+        display: inherit;
+        color: white;
+        padding: 0 1.2rem;
+        text-decoration: none;
+        height: 100%;
+        cursor: pointer;
+        transition-duration: 0.1s;
+    }
+}
+
+/* ------------------------- Laptop / Tablet ------------------------- */
+
+@media only screen and (min-width: 768px) {
+    li {
+        font-size: 250%;
+    }
+    .navbar__navlink:hover {
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+    }
+    .half-container {
+        &--right-side-title {
+            font-size: 3rem;
+            text-align: center;
+        }
+        &__about {
+            padding-right: 2vw;
+            text-align: center;
+            font-size: 1.8rem;
+            h3 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
+        }
+        &--no-style:hover {
+            color: #8c14fc;
+            transition-duration: 0.3s;
+        }
+    }
+}
+
+/* ------------------------- Mobile Phone ------------------------- */
+
+@media only screen and (max-width: 767.9px) {
+    li {
+        font-size: 175%;
+    }
+    h2 {
+        font-size: 115%;
+    }
+    .navbar__navlink:hover,
+    .navbar__navlink:active {
+        background-color: black;
+        transition-duration: 0.5s;
+    }
+    .half-container--no-style:hover,
+    .half-container--no-style:active {
+        color: red;
+        transition-duration: 1s;
+    }
+    .half-container__about {
+        font-size: 1.5rem;
+        p {
+            font-size: 1rem;
+        }
+    }
+    .main-container--mobile-container {
+        width: 100vw;
+        z-index: 1;
+        text-align: center;
+    }
+    .main-container__half-container--mobile-title {
+        visibility: hidden;
+        width: 0%;
+    }
+}
