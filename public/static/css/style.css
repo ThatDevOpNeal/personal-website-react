@@ -24,7 +24,7 @@ body {
   z-index: 999; }
 
 .modal {
-  background-color: rgba(237, 105, 105, 0.9);
+  background-color: rgba(237, 105, 105, 0.95);
   position: fixed;
   height: 80%;
   width: 80%;
@@ -36,7 +36,8 @@ body {
   transform: translate(-50%, -50%);
   animation: fade-fast 1s; }
   .modal--content {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: center; }
   .modal--background {
     background-color: rgba(47, 79, 79, 0.3);
     position: fixed;
