@@ -1,5 +1,5 @@
 .fade {
-    animation: fade 2.2s;
+    animation: fade 2s;
 }
 
 @keyframes fade {
@@ -12,10 +12,10 @@
 }
 
 .navbar--navbar-fade {
-    animation: fade-navbar 1s;
+    animation: fade-fast 1s;
 }
 
-@keyframes fade-navbar {
+@keyframes fade-fast {
     from {
         opacity: 0;
     }

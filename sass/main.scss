@@ -1,6 +1,7 @@
-$color-purple:#8c14fc;
+$color-blue:#007bb6;
 $color-navbar: #333;
-
+$color-lightcoral: #F08080;
+$color-darkslategray: darkslategray;
 *,
 *::after,
 *::before {
@@ -23,6 +24,52 @@ body {
     font-weight: 400;
     line-height: 1.7; // 1.7 times the pre-defined line height.
     box-sizing: border-box; // include everything within the true height and width.
+}
+
+#modal-root {
+    position: relative;
+    z-index: 999;
+}
+
+.modal {
+    background-color: rgba($color: darken($color: $color-lightcoral, $amount: 5), $alpha: 0.9);
+    position: fixed;
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    animation: fade-fast 1s;
+    &--content {
+        font-size: 1.5rem;
+    }
+    &--background {
+        background-color: rgba($color: $color-darkslategray, $alpha: 0.3);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 900;
+    }
+    &--close {
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        font-size: 4rem;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        font-weight: bold;
+        &:hover {
+            color: #007bb6;
+            cursor: pointer;
+            transform: scale(1.5);
+            transition-duration: 0.2s;
+        }
+    }
 }
 
 .main-container {
@@ -51,13 +98,13 @@ body {
     }
     &--no-style {
         text-decoration: none;
-        color: darkslategray;
+        color: $color-darkslategray;
         transition-duration: 0.3s;
     }
 }
 
 .particle-container {
-    background: lightcoral;
+    background: $color-lightcoral;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -144,7 +191,7 @@ body {
             }
         }
         &--no-style:hover {
-            color: lighten($color: $color-purple, $amount: 5);
+            color: lighten($color: $color-blue, $amount: 5);
             transition-duration: 0.3s;
         }
     }
@@ -182,7 +229,7 @@ body {
             }
         }
         &--no-style:hover {
-            color: lighten($color: $color-purple, $amount: 5);
+            color: lighten($color: $color-blue, $amount: 5);
             transition-duration: 0.3s;
         }
     }
