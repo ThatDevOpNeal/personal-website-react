@@ -212,4 +212,6 @@ body {
     text-align: center; }
   .main-container__half-container--mobile-title {
     visibility: hidden;
-    width: 0%; } }
+    width: 0%; }
+  .modal--content {
+    font-size: 1.25rem; } }

@@ -32,7 +32,7 @@ body {
 }
 
 .modal {
-    background-color: rgba($color: darken($color: $color-lightcoral, $amount: 5), $alpha: 0.9);
+    background-color: rgba($color: darken($color: $color-lightcoral, $amount: 5), $alpha: 0.95);
     position: fixed;
     height: 80%;
     width: 80%;
@@ -45,6 +45,7 @@ body {
     animation: fade-fast 1s;
     &--content {
         font-size: 1.5rem;
+        text-align: center;
     }
     &--background {
         background-color: rgba($color: $color-darkslategray, $alpha: 0.3);
