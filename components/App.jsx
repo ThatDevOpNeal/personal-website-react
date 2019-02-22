@@ -15,7 +15,7 @@ import '../public/static/css/animations.css';
 const particlesParams = {
   particles: {
     number: {
-      value: 150,
+      value: 30,
       density: {
         enable: true,
         value_area: 800,
