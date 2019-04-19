@@ -2,3 +2,6 @@
 node_modules
 dist
 .DS_STORE
+style.comp.css
+style.concat.css
+style.prefix.css
