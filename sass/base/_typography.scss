@@ -1,0 +1,165 @@
+.main-container {
+    position: absolute;
+    display: flex;
+    margin-top: 5vh;
+    width: 100%;
+    height: 95vh;
+
+    &__half-container {
+        width: 50%;
+        height: 100vh;
+        flex-wrap: wrap;
+
+        &--right-animation {
+            animation: moveInBottom .75s ease-out .75s;
+            /* This will make the 0% animation apply right when it starts. */
+            animation-fill-mode: backwards;
+        }
+    }
+}
+
+.half-container {
+    &__contact-ul {
+        text-align: center;
+        list-style: none;
+        font-size: 300%;
+    }
+
+    &--no-style {
+        text-decoration: none;
+        color: $color-darkslategray;
+        transition-duration: 0.3s;
+    }
+}
+
+.title-container {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    position: fixed;
+    top: 30%;
+    width: inherit;
+    overflow: hidden;
+    text-align: center;
+
+    &--main {
+        display: block;
+        font-size: 700%;
+        letter-spacing: 1.75rem;
+        /* Animation */
+        animation: moveInLeft 1s ease-out;
+        max-width: inherit;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 700%;
+        letter-spacing: 1.75rem;
+        /* Animation */
+        animation: moveInRight 1s ease-out;
+    }
+}
+
+@include respond(laptop) {
+    .half-container {
+        &--right-side-title {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        &__about {
+            padding-right: 2vw;
+            text-align: center;
+            font-size: 1.8rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+        }
+
+        &--no-style:hover {
+            color: lighten($color: $color-blue, $amount: 5);
+            transition-duration: 0.3s;
+        }
+    }
+}
+
+@include respond(tab-land) {
+    .title-container {
+        &--main {
+            font-size: 400%;
+        }
+
+        &--sub {
+            font-size: 400%;
+        }
+    }
+
+    .half-container {
+        &--right-side-title {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        &__about {
+            padding-right: 2vw;
+            text-align: center;
+            font-size: 1.3rem;
+
+            h3 {
+                font-size: 1.2srem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        &--no-style:hover {
+            color: lighten($color: $color-blue, $amount: 5);
+            transition-duration: 0.3s;
+        }
+    }
+}
+
+@include respond(phone) {
+    h2 {
+        font-size: 115%;
+    }
+
+    .half-container__contact-ul {
+        li {
+            font-size: 175%;
+        }
+    }
+
+    .half-container--no-style:hover,
+    .half-container--no-style:active {
+        color: red;
+        transition-duration: 1s;
+    }
+
+    .half-container__about {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 1.5rem;
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .main-container--mobile-container {
+        width: 100vw;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .main-container__half-container--mobile-title {
+        visibility: hidden;
+        width: 0%;
+    }
+}

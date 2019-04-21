@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /*
+        Doing this, main font-size, in PX is bad practice.
+        This will end up over-writing it for people who manually change it (disabled people).
+        Use percentage, we want 10px. natural is 16px. so font-size would be 62.5% (10/16 * 100)
+    */
+    font-size: 75%; // This defines what 1rem is
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7; // 1.7 times the pre-defined line height.
+    box-sizing: border-box; // include everything within the true height and width.
+}

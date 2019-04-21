@@ -1,0 +1,61 @@
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    display: inline-flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: $color-navbar;
+    z-index: 50;
+    text-align: center;
+    align-items: center;
+    font-size: 250%;
+
+    @include respond(big-desktop) {
+        font-size: 350%;
+    }
+
+    ul {
+        display: inline-flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__navlink {
+        display: inherit;
+        color: white;
+        padding: 0 1.2rem;
+        text-decoration: none;
+        height: 100%;
+        cursor: pointer;
+        transition-duration: 0.1s;
+    }
+}
+
+@include respond(laptop) {
+    .navbar__navlink:hover {
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+    }
+}
+
+@include respond(tab-land) {
+    .navbar__navlink:hover {
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+    }
+}
+
+@include respond(phone) {
+    .navbar {
+        font-size: 175%;
+
+        &__navlink:hover,
+        &__navlink:active {
+            background-color: black;
+            transition-duration: 0.5s;
+        }
+    }
+}
