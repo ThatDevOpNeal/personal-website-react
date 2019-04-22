@@ -17,6 +17,7 @@
     &__secondary {
         background-image: linear-gradient(to right, $color-purple-light, $color-purple-dark);
         font-size: 2.5rem;
+
         @include respond(tab-port) {
             font-size: 1.5rem;
         }
@@ -54,6 +55,18 @@
         text-decoration: none;
         color: $color-darkslategray;
         transition-duration: 0.3s;
+
+        &:hover {
+            color: lighten($color: $color-blue, $amount: 5);
+            transition-duration: .3s;
+
+            @supports (background-clip: text) or (-webkit-background-clip: text) {
+                background-image: linear-gradient(to right, $color-tertiary-light, $color-quaternary-dark);
+                background-clip: text;
+                -webkit-background-clip: text; // usually will have to use this.
+                color: transparent;
+            }
+        }
     }
 }
 
@@ -104,11 +117,6 @@
                 font-size: 1.25rem;
             }
         }
-
-        &--no-style:hover {
-            color: lighten($color: $color-blue, $amount: 5);
-            transition-duration: 0.3s;
-        }
     }
 }
 
@@ -143,11 +151,6 @@
                 font-size: 1.1rem;
             }
         }
-
-        &--no-style:hover {
-            color: lighten($color: $color-blue, $amount: 5);
-            transition-duration: 0.3s;
-        }
     }
 }
 
@@ -162,10 +165,16 @@
         }
     }
 
-    .half-container--no-style:hover,
     .half-container--no-style:active {
-        color: red;
-        transition-duration: 1s;
+        color: lighten($color: $color-blue, $amount: 5);
+        transition-duration: .3s;
+
+        @supports (background-clip: text) or (-webkit-background-clip: text) {
+            background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+            background-clip: text;
+            -webkit-background-clip: text; // usually will have to use this.
+            color: transparent;
+        }
     }
 
     .half-container__about {

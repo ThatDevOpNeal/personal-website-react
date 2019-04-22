@@ -30,21 +30,12 @@
         text-decoration: none;
         height: 100%;
         cursor: pointer;
-        transition-duration: 0.1s;
-    }
-}
-
-@include respond(laptop) {
-    .navbar__navlink:hover {
-        transform: scale(1.2);
         transition-duration: 0.2s;
-    }
-}
 
-@include respond(tab-land) {
-    .navbar__navlink:hover {
-        transform: scale(1.2);
-        transition-duration: 0.2s;
+        &:hover {
+            transform: scale(1.25);
+            transition-duration: 0.2s;
+        }
     }
 }
 
@@ -52,10 +43,17 @@
     .navbar {
         font-size: 175%;
 
-        &__navlink:hover,
+        &__navlink:focus,
         &__navlink:active {
             background-color: black;
-            transition-duration: 0.5s;
+            transition-duration: 0.3s;
+            @supports (background-clip: text) or (-webkit-background-clip: text) {
+                background-color: none;
+                background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+                background-clip: text;
+                -webkit-background-clip: text; // usually will have to use this.
+                color: transparent;
+            }
         }
     }
 }
