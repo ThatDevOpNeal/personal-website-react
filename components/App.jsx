@@ -27,10 +27,7 @@ const particlesParams = {
 const App = () => (
   <HashRouter>
     <Fragment>
-      <Particles
-        params={particlesParams}
-        className="particle-container"
-      />
+      <Particles params={particlesParams} className="particle-container" />
       <div className="main-container">
         <Navbar />
         <div className="main-container__half-container main-container__half-container--mobile-title">

@@ -1,3 +1,28 @@
+.header {
+    margin: 1rem 0rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+    background-clip: text;
+    -webkit-background-clip: text; // usually will have to use this.
+    color: transparent;
+    letter-spacing: 0.2rem;
+
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+    }
+
+    &__secondary {
+        background-image: linear-gradient(to right, $color-purple-light, $color-purple-dark);
+        font-size: 2.5rem;
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 .main-container {
     position: absolute;
     display: flex;
@@ -89,6 +114,7 @@
 
 @include respond(tab-land) {
     .title-container {
+
         &--main {
             font-size: 400%;
         }
@@ -161,5 +187,23 @@
     .main-container__half-container--mobile-title {
         visibility: hidden;
         width: 0%;
+    }
+}
+
+@include respond(big-desktop) {
+    .half-container {
+        &__about {
+            padding-right: 2vw;
+            text-align: center;
+            font-size: 1.7rem;
+
+            h3 {
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
